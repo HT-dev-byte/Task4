@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <nav>
+    <a href="site.html">Portfolio</a>
+    <a href="todo.html">To-Do App</a>
+    <a href="products.html">Product Listing</a>
+  </nav>
+
+  <section>
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="addTaskBtn">Add</button>
+    <button id="clearTasksBtn">Clear All</button>
+    <ul id="taskList"></ul>
+
+    <!-- Debug panel to show LocalStorage -->
+    <div id="todoDebug" class="debug-panel">LocalStorage: (empty)</div>
+  </section>
+
+  <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <nav>
+    <a href="site.html">Portfolio</a>
+    <a href="todo.html">To-Do App</a>
+    <a href="products.html">Product Listing</a>
+  </nav>
+
+  <section>
+    <h2>Product Listing</h2>
+    <label>
+      Filter by:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+    </label>
+    <label>
+      Sort by:
+      <select id="sortFilter">
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </label>
+    <div id="productList"></div>
+  </section>
+
+  <script src="products.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderProducts();
+      document.getElementById("categoryFilter")?.addEventListener("change", renderProducts);
+      document.getElementById("sortFilter")?.addEventListener("change", renderProducts);
+    });
+  </script>
+</body>
+</html>

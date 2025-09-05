@@ -1,0 +1,122 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background: #0077cc;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* Section Containers */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h1, h2 {
+  color: #0077cc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Inputs */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+/* To-Do List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #eef6ff;
+}
+
+/* Product List */
+#productList div {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#productList div:hover {
+  background: #eef6ff;
+}
+
+/* Debug Panel */
+.debug-panel {
+  margin-top: 1em;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 6px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #444;
+}
+
